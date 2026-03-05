@@ -2,7 +2,7 @@
 原理如下：删掉/System/Library/LaunchDaemons/com.apple.CommCenter.plist，并将我提供的plist放入/Library/LaunchDaemons里面，然后把BBUpdaterExtreme放到/usr/bin，把.sh脚本放到/usr/games
 脚本会开机自启，不断尝试启动BBUpdaterExtreme的防止重启机制，一旦防重启机制启动，立刻结束BBUpdaterExtreme进程。
 这个方法会导致用量、蜂窝移动网络等打不开，且电话app会出现一个红点。目前我的能力没办法解决这些。正如我所述，这个方法非常的草台班子。
-目前我正在尝试移植iOS 5的libprotobuf.dylib到iOS 4.2.10去，不过这个可能性也几乎没有。
+目前我正在尝试移植iOS 5的libATCommandDynamic.dylib到iOS 4.2.10去，不过这个可能性也几乎没有。
 
 This little hack’s actually a byproduct of my research into the baseband downgrade process for the iPhone 3GS.
 Here’s how it works: Delete /System/Library/LaunchDaemons/com.apple.CommCenter.plist, then place the plist file I provide into /Library/LaunchDaemons. After that, put BBUpdaterExtreme into /usr/bin, and the .sh script into /usr/games.
